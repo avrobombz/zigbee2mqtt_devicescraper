@@ -31,7 +31,7 @@ url_l = ['https://www.zigbee2mqtt.io/devices/014G2461.html',
 'https://www.zigbee2mqtt.io/devices/TV01-ZB.html',
 'https://www.zigbee2mqtt.io/devices/701721.html',
 'https://www.zigbee2mqtt.io/devices/GS361A-H04.html',
-'https://www.zigbee2mqtt.io/devices/TS0601_thermostat_1.html']
+'https://www.zigbee2mqtt.io/devices/TS0601_thermostat_1.html'] #list of urls to be scraped
 
 for i in url_l:
     temp_dict = copy.deepcopy(master_dict)
@@ -45,7 +45,7 @@ for i in url_l:
     expose = temp_data[4]
 
     for i in expose:
-        temp_dict['EXPOSES'][i] = 'Y'
+        temp_dict['EXPOSES'][i] = 'Y' #add Y if device supports listed feature
 
     # l = []    
     # l.append(temp_dict)
